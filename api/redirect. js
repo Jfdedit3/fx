@@ -1,0 +1,12 @@
+export default function handler(req, res) {
+  const { user, id } = req.query;
+
+  if (!user || !id) {
+    res.status(400).send('Lien invalide');
+    return;
+  }
+
+  const redirectUrl = `https://fixvx.com/${user}/status/${id}`;
+  res.writeHead(301, { Location: redirectUrl });
+  res.end();
+}
