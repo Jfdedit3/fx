@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(.*)/status/(.*)",
+      "dest": "/index.js?user=$1&id=$2"
+    }
+  ]
+}
