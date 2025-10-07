@@ -3,7 +3,7 @@
   "routes": [
     {
       "src": "/(.*)/status/(.*)",
-      "dest": "/index.js?user=$1&id=$2"
+      "dest": "/api/redirect.js?user=$1&id=$2"
     }
   ]
 }
